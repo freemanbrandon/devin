@@ -170,6 +170,31 @@ npm run build
 - **Training Programs**: React development and best practices training
 - **Consulting Services**: Technical architecture and optimization
 
+## 📄 License
+
+This project is licensed under the **Apache License, Version 2.0** - see the [LICENSE](LICENSE) file for details.
+
+### **License Benefits**
+- **Open Source**: Free to use, modify, and distribute
+- **Commercial Friendly**: Can be used in commercial applications
+- **Patent Protection**: Includes patent license for contributors
+- **Attribution Required**: Must include license and copyright notices
+
+### **Usage Rights**
+- ✅ **Use**: Free to use for any purpose
+- ✅ **Modify**: Can modify and create derivative works
+- ✅ **Distribute**: Can distribute original or modified versions
+- ✅ **Commercial Use**: Can use in commercial applications
+- ✅ **Patent Use**: Can use patented technology included in the work
+
+### **Requirements**
+- 📋 **License Notice**: Must include a copy of the Apache License
+- 📋 **Copyright Notice**: Must retain original copyright notices
+- 📋 **Modification Notice**: Must state changes made to the work
+- 📋 **Attribution**: Must include attribution notices if present
+
+For the complete license text, see the [LICENSE](LICENSE) file in the repository root.
+
 ---
 
 **Ready to transform your digital experience?** This Battleship Game demonstrates the power of modern web development and serves as an excellent foundation for enterprise applications. Contact us to explore partnership opportunities, custom development, or technical consulting services.
