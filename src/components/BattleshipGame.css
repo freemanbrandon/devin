@@ -1,0 +1,137 @@
+.battleship-game {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  color: white;
+}
+
+.battleship-game h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.game-info {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.message {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.turn {
+  font-size: 1rem;
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.game-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.board-section {
+  text-align: center;
+}
+
+.board-section h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #ffd700;
+}
+
+.ship-selection {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  margin-top: 20px;
+}
+
+.ship-selection h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffd700;
+}
+
+.orientation-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.orientation-toggle button {
+  padding: 10px 20px;
+  border: 2px solid #ffd700;
+  background: transparent;
+  color: #ffd700;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.orientation-toggle button.active {
+  background: #ffd700;
+  color: #333;
+}
+
+.orientation-toggle button:hover {
+  background: #ffd700;
+  color: #333;
+}
+
+.game-over {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.reset-button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background: #ffd700;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.reset-button:hover {
+  background: #ffed4e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .battleship-game {
+    padding: 10px;
+  }
+  
+  .battleship-game h1 {
+    font-size: 2rem;
+  }
+  
+  .game-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .board-section h2 {
+    font-size: 1.2rem;
+  }
+} 

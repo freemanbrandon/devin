@@ -1,0 +1,118 @@
+.ship-selector {
+  margin-top: 20px;
+}
+
+.ship-selector h4 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #ffd700;
+}
+
+.ship-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.ship-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+  position: relative;
+}
+
+.ship-button:hover:not(:disabled) {
+  border-color: #ffd700;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.ship-button.selected {
+  border-color: #ffd700;
+  background: rgba(255, 215, 0, 0.2);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.ship-button.placed {
+  opacity: 0.5;
+  cursor: not-allowed;
+  border-color: #27ae60;
+  background: rgba(39, 174, 96, 0.2);
+}
+
+.ship-preview {
+  display: flex;
+  gap: 2px;
+}
+
+.ship-segment {
+  width: 12px;
+  height: 12px;
+  background: #4a90e2;
+  border-radius: 2px;
+}
+
+.ship-name {
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.placed-indicator {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #27ae60;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Ship-specific colors */
+.ship-button[data-ship="carrier"] .ship-segment {
+  background: #e74c3c;
+}
+
+.ship-button[data-ship="battleship"] .ship-segment {
+  background: #f39c12;
+}
+
+.ship-button[data-ship="destroyer"] .ship-segment {
+  background: #27ae60;
+}
+
+.ship-button[data-ship="submarine"] .ship-segment {
+  background: #9b59b6;
+}
+
+.ship-button[data-ship="patrol"] .ship-segment {
+  background: #34495e;
+}
+
+@media (max-width: 768px) {
+  .ship-list {
+    gap: 10px;
+  }
+  
+  .ship-button {
+    min-width: 100px;
+    padding: 10px;
+  }
+  
+  .ship-segment {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .ship-name {
+    font-size: 0.8rem;
+  }
+} 

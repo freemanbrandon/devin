@@ -1,0 +1,147 @@
+.game-board {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.board-header {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.board-row {
+  display: flex;
+  margin-bottom: 2px;
+}
+
+.header-cell {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #ffd700;
+}
+
+.corner-cell {
+  width: 30px;
+  height: 30px;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.cell:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+.cell:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Ship styling */
+.cell.ship {
+  background: #4a90e2;
+  border-color: #357abd;
+}
+
+.cell.ship-carrier {
+  background: #e74c3c;
+  border-color: #c0392b;
+}
+
+.cell.ship-battleship {
+  background: #f39c12;
+  border-color: #e67e22;
+}
+
+.cell.ship-destroyer {
+  background: #27ae60;
+  border-color: #229954;
+}
+
+.cell.ship-submarine {
+  background: #9b59b6;
+  border-color: #8e44ad;
+}
+
+.cell.ship-patrol {
+  background: #34495e;
+  border-color: #2c3e50;
+}
+
+/* Shot styling */
+.cell.hit {
+  background: #e74c3c !important;
+  border-color: #c0392b !important;
+  position: relative;
+}
+
+.cell.hit::after {
+  content: '✕';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.cell.miss {
+  background: #95a5a6 !important;
+  border-color: #7f8c8d !important;
+  position: relative;
+}
+
+.cell.miss::after {
+  content: '○';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .game-board {
+    padding: 10px;
+  }
+  
+  .cell, .header-cell, .corner-cell {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .header-cell {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cell, .header-cell, .corner-cell {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .header-cell {
+    font-size: 0.6rem;
+  }
+} 
